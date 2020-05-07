@@ -4,7 +4,7 @@ const path = require("path");
 const hbs = require("hbs");
 const geocode = require("./geocode");
 const app = express();
-
+console.log();
 // geocode("melbourne", (err, res) => {
 // 	console.log(err);
 // 	console.log(res);
