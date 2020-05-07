@@ -4,6 +4,7 @@ const path = require("path");
 const hbs = require("hbs");
 const geocode = require("./geocode");
 const app = express();
+const port = process.env.PORT || 3000;
 console.log();
 // geocode("melbourne", (err, res) => {
 // 	console.log(err);
@@ -76,6 +77,6 @@ app.get("*", (req, res) => {
 	res.render("404", {});
 });
 
-app.listen(3000, () => {
-	console.log("Server is up on port 3000.");
+app.listen(port, () => {
+	console.log("Server is up on port" + port + ".");
 });
